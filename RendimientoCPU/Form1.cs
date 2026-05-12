@@ -55,7 +55,7 @@ namespace RendimientoCPU
                 // Encabezados
                 dtg.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 64, 128);
                 dtg.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-                dtg.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+                dtg.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
                 dtg.EnableHeadersVisualStyles = false;
 
                 // Filas alternas
