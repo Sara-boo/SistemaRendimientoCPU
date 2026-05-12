@@ -44,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.RchTxtConclusion = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDatosHistoricos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -55,9 +56,9 @@
             // 
             this.groupBox1.Controls.Add(this.DtgDatosHistoricos);
             this.groupBox1.Location = new System.Drawing.Point(29, 30);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(337, 256);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -67,8 +68,9 @@
             // 
             this.DtgDatosHistoricos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtgDatosHistoricos.Location = new System.Drawing.Point(7, 33);
-            this.DtgDatosHistoricos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DtgDatosHistoricos.Margin = new System.Windows.Forms.Padding(4);
             this.DtgDatosHistoricos.Name = "DtgDatosHistoricos";
+            this.DtgDatosHistoricos.RowHeadersWidth = 51;
             this.DtgDatosHistoricos.Size = new System.Drawing.Size(322, 213);
             this.DtgDatosHistoricos.TabIndex = 0;
             // 
@@ -79,9 +81,9 @@
             this.groupBox2.Controls.Add(this.LblSpline);
             this.groupBox2.Controls.Add(this.LblRegresion);
             this.groupBox2.Location = new System.Drawing.Point(29, 323);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(337, 203);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -92,9 +94,9 @@
             this.RBtnSplineCubico.AutoSize = true;
             this.RBtnSplineCubico.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.RBtnSplineCubico.Location = new System.Drawing.Point(32, 134);
-            this.RBtnSplineCubico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtnSplineCubico.Margin = new System.Windows.Forms.Padding(4);
             this.RBtnSplineCubico.Name = "RBtnSplineCubico";
-            this.RBtnSplineCubico.Size = new System.Drawing.Size(144, 29);
+            this.RBtnSplineCubico.Size = new System.Drawing.Size(171, 34);
             this.RBtnSplineCubico.TabIndex = 3;
             this.RBtnSplineCubico.TabStop = true;
             this.RBtnSplineCubico.Text = "Spline Cúbico";
@@ -105,9 +107,9 @@
             this.RBtnRegresionLineal.AutoSize = true;
             this.RBtnRegresionLineal.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.RBtnRegresionLineal.Location = new System.Drawing.Point(32, 45);
-            this.RBtnRegresionLineal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtnRegresionLineal.Margin = new System.Windows.Forms.Padding(4);
             this.RBtnRegresionLineal.Name = "RBtnRegresionLineal";
-            this.RBtnRegresionLineal.Size = new System.Drawing.Size(172, 29);
+            this.RBtnRegresionLineal.Size = new System.Drawing.Size(203, 34);
             this.RBtnRegresionLineal.TabIndex = 2;
             this.RBtnRegresionLineal.TabStop = true;
             this.RBtnRegresionLineal.Text = "Regresión Lineal:";
@@ -120,7 +122,7 @@
             this.LblSpline.Location = new System.Drawing.Point(60, 167);
             this.LblSpline.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSpline.Name = "LblSpline";
-            this.LblSpline.Size = new System.Drawing.Size(258, 21);
+            this.LblSpline.Size = new System.Drawing.Size(321, 28);
             this.LblSpline.TabIndex = 1;
             this.LblSpline.Text = "S2(x) = 60 + 13.5(x-5) - 2.25(x-5)² ...";
             // 
@@ -131,12 +133,13 @@
             this.LblRegresion.Location = new System.Drawing.Point(61, 84);
             this.LblRegresion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblRegresion.Name = "LblRegresion";
-            this.LblRegresion.Size = new System.Drawing.Size(185, 21);
+            this.LblRegresion.Size = new System.Drawing.Size(229, 28);
             this.LblRegresion.TabIndex = 0;
             this.LblRegresion.Text = "y(x) = 6.7334 + 10.4571x";
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.DtgIteraciones);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.TxtTolerancia);
@@ -145,10 +148,10 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(393, 30);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(740, 377);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(740, 441);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "3. Método Newton-Raphson";
@@ -156,9 +159,10 @@
             // DtgIteraciones
             // 
             this.DtgIteraciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgIteraciones.Location = new System.Drawing.Point(25, 168);
-            this.DtgIteraciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DtgIteraciones.Location = new System.Drawing.Point(25, 218);
+            this.DtgIteraciones.Margin = new System.Windows.Forms.Padding(4);
             this.DtgIteraciones.Name = "DtgIteraciones";
+            this.DtgIteraciones.RowHeadersWidth = 51;
             this.DtgIteraciones.Size = new System.Drawing.Size(702, 199);
             this.DtgIteraciones.TabIndex = 6;
             // 
@@ -166,27 +170,27 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(23, 130);
+            this.label5.Location = new System.Drawing.Point(23, 165);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 25);
+            this.label5.Size = new System.Drawing.Size(220, 30);
             this.label5.TabIndex = 5;
             this.label5.Text = "Tabla de Iteraciones: ";
             // 
             // TxtTolerancia
             // 
             this.TxtTolerancia.Location = new System.Drawing.Point(290, 74);
-            this.TxtTolerancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTolerancia.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTolerancia.Name = "TxtTolerancia";
-            this.TxtTolerancia.Size = new System.Drawing.Size(154, 32);
+            this.TxtTolerancia.Size = new System.Drawing.Size(154, 39);
             this.TxtTolerancia.TabIndex = 4;
             // 
             // TxtAproximacion
             // 
             this.TxtAproximacion.Location = new System.Drawing.Point(28, 74);
-            this.TxtAproximacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtAproximacion.Margin = new System.Windows.Forms.Padding(4);
             this.TxtAproximacion.Name = "TxtAproximacion";
-            this.TxtAproximacion.Size = new System.Drawing.Size(217, 32);
+            this.TxtAproximacion.Size = new System.Drawing.Size(217, 39);
             this.TxtAproximacion.TabIndex = 3;
             // 
             // BtnCalcularRaiz
@@ -197,7 +201,7 @@
             this.BtnCalcularRaiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCalcularRaiz.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.BtnCalcularRaiz.Location = new System.Drawing.Point(477, 57);
-            this.BtnCalcularRaiz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnCalcularRaiz.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCalcularRaiz.Name = "BtnCalcularRaiz";
             this.BtnCalcularRaiz.Size = new System.Drawing.Size(174, 51);
             this.BtnCalcularRaiz.TabIndex = 2;
@@ -212,7 +216,7 @@
             this.label4.Location = new System.Drawing.Point(285, 42);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 25);
+            this.label4.Size = new System.Drawing.Size(110, 30);
             this.label4.TabIndex = 1;
             this.label4.Text = "Tolerancia";
             // 
@@ -223,24 +227,34 @@
             this.label3.Location = new System.Drawing.Point(20, 42);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 25);
+            this.label3.Size = new System.Drawing.Size(256, 30);
             this.label3.TabIndex = 0;
             this.label3.Text = "Aproximación Inicial (X0):";
             // 
             // RchTxtConclusion
             // 
-            this.RchTxtConclusion.Location = new System.Drawing.Point(393, 422);
-            this.RchTxtConclusion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RchTxtConclusion.Location = new System.Drawing.Point(393, 495);
+            this.RchTxtConclusion.Margin = new System.Windows.Forms.Padding(4);
             this.RchTxtConclusion.Name = "RchTxtConclusion";
             this.RchTxtConclusion.Size = new System.Drawing.Size(740, 89);
             this.RchTxtConclusion.TabIndex = 2;
             this.RchTxtConclusion.Text = "";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(197, 34);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Valor sugerido automáticamente. \r\nPuedes modificarlo si lo deseas\r\n";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 552);
+            this.ClientSize = new System.Drawing.Size(1174, 597);
             this.Controls.Add(this.RchTxtConclusion);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -280,6 +294,7 @@
         private System.Windows.Forms.DataGridView DtgIteraciones;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox RchTxtConclusion;
+        private System.Windows.Forms.Label label1;
     }
 }
 

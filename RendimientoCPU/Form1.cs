@@ -16,6 +16,8 @@ namespace RendimientoCPU
         {
             InitializeComponent();
             ConfigurarTablas();
+            double ultimoMes = Convert.ToDouble(DtgDatosHistoricos.Rows[DtgDatosHistoricos.Rows.Count - 1].Cells[0].Value);
+            TxtAproximacion.Text = (ultimoMes + 2).ToString();
         }
         private void ConfigurarTablas()
         {
@@ -39,6 +41,31 @@ namespace RendimientoCPU
             DtgIteraciones.Columns.Add("Error", "Error");
             DtgIteraciones.AllowUserToAddRows = false;
             DtgIteraciones.ReadOnly = true; // El usuario no debe editar los resultados
+
+            DtgDatosHistoricos.RowHeadersVisible = false;
+            DtgIteraciones.RowHeadersVisible = false;
+
+            // Aplicar a los dos DataGridView
+            foreach (DataGridView dtg in new[] { DtgDatosHistoricos, DtgIteraciones })
+            {
+                dtg.BorderStyle = BorderStyle.None;
+                dtg.GridColor = Color.FromArgb(220, 220, 220);
+                dtg.BackgroundColor = Color.White;
+
+                // Encabezados
+                dtg.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 64, 128);
+                dtg.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dtg.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+                dtg.EnableHeadersVisualStyles = false;
+
+                // Filas alternas
+                dtg.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(240, 245, 255);
+                dtg.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 64, 128);
+                dtg.DefaultCellStyle.SelectionForeColor = Color.White;
+            }
+            // Ajustar altura del DataGridView al contenido
+            DtgDatosHistoricos.Height = DtgDatosHistoricos.ColumnHeadersHeight +
+                                         (DtgDatosHistoricos.Rows.Count * DtgDatosHistoricos.RowTemplate.Height);
         }
         private void BtnCalcularRaiz_Click(object sender, EventArgs e)
         {
