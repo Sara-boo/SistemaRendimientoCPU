@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DtgDatosHistoricos = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -36,6 +37,7 @@
             this.LblSpline = new System.Windows.Forms.Label();
             this.LblRegresion = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.DtgIteraciones = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtTolerancia = new System.Windows.Forms.TextBox();
@@ -44,7 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.RchTxtConclusion = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDatosHistoricos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -156,6 +157,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "3. Método Newton-Raphson";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(197, 34);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Valor sugerido automáticamente. \r\nPuedes modificarlo si lo deseas\r\n";
+            // 
             // DtgIteraciones
             // 
             this.DtgIteraciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -240,16 +251,6 @@
             this.RchTxtConclusion.TabIndex = 2;
             this.RchTxtConclusion.Text = "";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 117);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 34);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Valor sugerido automáticamente. \r\nPuedes modificarlo si lo deseas\r\n";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
@@ -261,6 +262,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

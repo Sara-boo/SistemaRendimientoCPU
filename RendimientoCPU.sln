@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37216.2 d17.14
+VisualStudioVersion = 17.14.37216.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendimientoCPU", "RendimientoCPU\RendimientoCPU.csproj", "{1F2455C9-A477-41BC-BEBF-C3AD4CC8D1BC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Calculadora - Rendimiento CPU", "Calculadora - Rendimiento CPU\Calculadora - Rendimiento CPU.vdproj", "{5D42C194-C837-B93F-0F4D-63A84CCE363A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{1F2455C9-A477-41BC-BEBF-C3AD4CC8D1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F2455C9-A477-41BC-BEBF-C3AD4CC8D1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F2455C9-A477-41BC-BEBF-C3AD4CC8D1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D42C194-C837-B93F-0F4D-63A84CCE363A}.Debug|Any CPU.ActiveCfg = Debug
+		{5D42C194-C837-B93F-0F4D-63A84CCE363A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
