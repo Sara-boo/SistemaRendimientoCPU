@@ -44,7 +44,7 @@ namespace RendimientoCPU
         {
             try
             {
-                // 1. Limpiar resultados anteriores
+                //Limpiar resultados anteriores
                 DtgIteraciones.Rows.Clear();
                 RchTxtConclusion.Clear();
                 List<double> xDatos = new List<double>();
